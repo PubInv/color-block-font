@@ -1,25 +1,304 @@
 <!DOCTYPE html>
 <html>
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+  <style>
+    .ax {
+     position: relative;
+    }
+    span.ax::before {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+    span.ax::after {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        .bx {
+     position: relative;
+    }
+    span.bx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.bx::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+
+        .cx {
+     position: relative;
+    }
+    span.cx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.cx::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+        .dx {
+     position: relative;
+    }
+    span.dx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.dx::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+        .ex {
+     position: relative;
+    }
+    span.ex::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.ex::after {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+        .fx {
+     position: relative;
+    }
+    span.fx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.fx::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+	}
+
+
+    .gx {
+     position: relative;
+    }
+    span.gx::before {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+    span.gx::after {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        .hx {
+     position: relative;
+    }
+    span.hx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.hx::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+
+        .ix {
+     position: relative;
+    }
+    span.ix::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.ix::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+        .jx {
+     position: relative;
+    }
+    span.jx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.jx::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+        .kx {
+     position: relative;
+    }
+    span.kx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.kx::after {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+
+        .lx {
+     position: relative;
+    }
+    span.lx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+        span.lx::after {
+    content: " ";
+    background-color: pink;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+    }
+</style>
 <body>
 
 <h1>My First Heading</h1>
 
 <p>My first paragraph.</p>
 
-<p>My mother has 
-<span style="postion:relative;">
-<span style="background-color:blue; position:absolute; top: 20px;
-    right: 0;
-    width: 10px;
-    height: 20px;
-    border: 3px solid #000000;">blue</span>
-<span style="background-color:red; postion:absolute; top: 80px;
-    right: 0;
-    width: 10px;
-    height: 20px;
-    border: 3px solid #000000;">blue</span>
-</span>
-eyes.</p>
 
 <p>My mother has 
 <span style="position:relative; width: 10px;">
@@ -34,8 +313,38 @@ eyes.</p>
     height: 10px;
     border: 1px solid #000000;"></span>
 </span>
-</p>
+<p>
+  
+  <input id="textarea" type="textarea">
+  </input>
+  <input type="button" onclick="render()">Render!</input>
 
+<div id="alphabet"> </div>
 
+<div id="fontrender"> </div>
+<div id="cfontrender"> </div>
 </body>
+<script>
+    function colorize_one(c) {
+	var classname = "" + c + "x";
+	return '<span class="'+classname+'">&nbsp; &nbsp;</span>';
+    }
+function colorize(text) {
+    var returnHTML = "";
+    for(var i = 0; i < text.length; i++ ) {
+	returnHTML = returnHTML + colorize_one(text[i]);
+    }
+    return returnHTML;
+}
+function render() {
+
+    var text = $("#textarea").val();
+    $("#fontrender").html(text);
+
+    var ctext = colorize(text);
+    $("#cfontrender").html(ctext);
+}
+var alphabet = "abcdefhijklmnopqrstuvwxyz";
+$("#alphabet").html(colorize(alphabet));
+</script>
 </html>
