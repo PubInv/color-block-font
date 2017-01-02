@@ -2,12 +2,40 @@
 <html>
   <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
+    </head>
+    <!-- My color palette will be : Red Green Yellow Cyan Magenta
+a: r r
+b: g y
+c: m g
+d: r m
+e: g g
+f: r g
+g: g m
+h: c y
+i: y y
+j: y m
+k: y c
+l: c r
+m: g r
+n: r y
+o: c c
+p: c g
+q: m c
+r: r m
+s: g c
+t: m y
+u: m m
+v: r c
+w: y r
+x: y g
+y: c m
+z: m r
+-->
   <style>
     .ax {
-     position: relative;
+	position: relative;
     }
-    span.ax::before {
+span.ax::before {
     content: " ";
     background-color: red;
     position:absolute; 
@@ -16,8 +44,8 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
-    span.ax::after {
+}
+span.ax::after {
     content: " ";
     background-color: red;
     position:absolute; 
@@ -26,11 +54,11 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
+}
+    .bx {
+	position: relative;
     }
-        .bx {
-     position: relative;
-    }
-    span.bx::before {
+span.bx::before {
     content: " ";
     background-color: green;
     position:absolute; 
@@ -39,23 +67,71 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
-        span.bx::after {
+}
+span.bx::after {
     content: " ";
-    background-color: pink;
+    background-color: yellow;
     position:absolute; 
     top: 10px; 
     left: 0;  
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
+}
 
 
-        .cx {
-     position: relative;
+    .cx {
+	position: relative;
     }
-    span.cx::before {
+span.cx::before {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.cx::after {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .dx {
+	position: relative;
+    }
+span.dx::before {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.dx::after {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .ex {
+	position: relative;
+    }
+span.ex::before {
     content: " ";
     background-color: green;
     position:absolute; 
@@ -64,56 +140,32 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
-        span.cx::after {
+}
+span.ex::after {
     content: " ";
-    background-color: pink;
+    background-color: green;
     position:absolute; 
     top: 10px; 
     left: 0;  
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
+}
 
-        .dx {
-     position: relative;
+    .fx {
+	position: relative;
     }
-    span.dx::before {
+span.fx::before {
     content: " ";
-    background-color: green;
+    background-color: red;
     position:absolute; 
     top: 0px; 
     left: 0;  
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
-        span.dx::after {
-    content: " ";
-    background-color: pink;
-    position:absolute; 
-    top: 10px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-
-        .ex {
-     position: relative;
-    }
-    span.ex::before {
-    content: " ";
-    background-color: green;
-    position:absolute; 
-    top: 0px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-        span.ex::after {
+}
+span.fx::after {
     content: " ";
     background-color: green;
     position:absolute; 
@@ -122,37 +174,181 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
-
-        .fx {
-     position: relative;
-    }
-    span.fx::before {
-    content: " ";
-    background-color: green;
-    position:absolute; 
-    top: 0px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-        span.fx::after {
-    content: " ";
-    background-color: pink;
-    position:absolute; 
-    top: 10px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-	}
+}
 
 
     .gx {
-     position: relative;
+	position: relative;
     }
-    span.gx::before {
+span.gx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.gx::after {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+    .hx {
+	position: relative;
+    }
+span.hx::before {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.hx::after {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+
+    .ix {
+	position: relative;
+    }
+span.ix::before {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.ix::after {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .jx {
+	position: relative;
+    }
+span.jx::before {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.jx::after {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .kx {
+	position: relative;
+    }
+span.kx::before {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.kx::after {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .lx {
+	position: relative;
+    }
+span.lx::before {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.lx::after {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .mx {
+	position: relative;
+    }
+
+span.mx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.mx::after {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+    .nx {
+	position: relative;
+    }
+span.nx::before {
     content: " ";
     background-color: red;
     position:absolute; 
@@ -161,8 +357,226 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
+}
+span.nx::after {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+
+    .ox {
+	position: relative;
     }
-    span.gx::after {
+span.ox::before {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.ox::after {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .px {
+	position: relative;
+    }
+span.px::before {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.px::after {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .qx {
+	position: relative;
+    }
+span.qx::before {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.qx::after {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .rx {
+	position: relative;
+    }
+span.rx::before {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.rx::after {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+
+    .sx {
+	position: relative;
+    }
+span.sx::before {
+    content: " ";
+    background-color: green;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.sx::after {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+    .tx {
+	position: relative;
+    }
+span.tx::before {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.tx::after {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+
+    .ux {
+	position: relative;
+    }
+span.ux::before {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.ux::after {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .vx {
+	position: relative;
+    }
+span.vx::before {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.vx::after {
+    content: " ";
+    background-color: cyan;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+
+    .wx {
+	position: relative;
+    }
+span.wx::before {
+    content: " ";
+    background-color: yellow;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.wx::after {
     content: " ";
     background-color: red;
     position:absolute; 
@@ -171,94 +585,22 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
+}
+
+    .xx {
+	position: relative;
     }
-        .hx {
-     position: relative;
-    }
-    span.hx::before {
+span.xx::before {
     content: " ";
-    background-color: green;
+    background-color: yellow;
     position:absolute; 
     top: 0px; 
     left: 0;  
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
-        span.hx::after {
-    content: " ";
-    background-color: pink;
-    position:absolute; 
-    top: 10px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-
-
-        .ix {
-     position: relative;
-    }
-    span.ix::before {
-    content: " ";
-    background-color: green;
-    position:absolute; 
-    top: 0px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-        span.ix::after {
-    content: " ";
-    background-color: pink;
-    position:absolute; 
-    top: 10px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-
-        .jx {
-     position: relative;
-    }
-    span.jx::before {
-    content: " ";
-    background-color: green;
-    position:absolute; 
-    top: 0px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-        span.jx::after {
-    content: " ";
-    background-color: pink;
-    position:absolute; 
-    top: 10px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-
-        .kx {
-     position: relative;
-    }
-    span.kx::before {
-    content: " ";
-    background-color: green;
-    position:absolute; 
-    top: 0px; 
-    left: 0;  
-    width: 10px; 
-    height: 10px; 
-    border: 1px solid #000000
-    }
-        span.kx::after {
+}
+span.xx::after {
     content: " ";
     background-color: green;
     position:absolute; 
@@ -267,31 +609,55 @@
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
+}
 
-        .lx {
-     position: relative;
+    .yx {
+	position: relative;
     }
-    span.lx::before {
+span.yx::before {
     content: " ";
-    background-color: green;
+    background-color: cyan;
     position:absolute; 
     top: 0px; 
     left: 0;  
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
-    }
-        span.lx::after {
+}
+span.yx::after {
     content: " ";
-    background-color: pink;
+    background-color: magenta;
     position:absolute; 
     top: 10px; 
     left: 0;  
     width: 10px; 
     height: 10px; 
     border: 1px solid #000000
+}
+
+    .zx {
+	position: relative;
     }
+span.zx::before {
+    content: " ";
+    background-color: magenta;
+    position:absolute; 
+    top: 0px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
+span.zx::after {
+    content: " ";
+    background-color: red;
+    position:absolute; 
+    top: 10px; 
+    left: 0;  
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #000000
+}
 </style>
 <body>
 
