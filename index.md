@@ -4,6 +4,7 @@ title: Color Block Font
 ---
     
     
+<style>
     <!--- My color palette will be : Red Green Yellow Cyan Black
 a: r r
 b: g y
@@ -32,7 +33,8 @@ x: y g
 y: c m
 z: m r
 --->
-  <style>
+
+  
     .ax {
 	position: relative;
     }
