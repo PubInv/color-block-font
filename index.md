@@ -5,6 +5,7 @@ title: Color Block Font
     
 
 <link rel="stylesheet" href="./stylesheets/color-block.css">
+<script src="./javascripts/colorize.js"></script>
 
 <style>
  .text-block {
@@ -54,114 +55,15 @@ text-align: left;
 
 <p>Check out our parent project, <a href="https://pubinv.github.io/PubInv">Public Invention</a>.</p>
 
-    <script>
-function isLetter(str) {
-	return str.length === 1 && str.match(/[a-z]/i);
-}
-function colorize_one(c) {
-//    var cstr = ("" + c).toLowerCase();
-    var cstr = ("" + c);
-    var c = cstr[0];
-    if (isLetter(cstr)) {
-	var classname = "" + c + "x";
-	return '<span  class="'+classname+'" style="display: inline-block; width: 0px;"><span>  </span></span>\n';
-    } else if (c == ' ') {
-	return '<span style="display: inline-block; width: 0px;">&nbsp;</span>\n';
-    } else if (c == '\n') {
-	return '<br>\n';	
-    } else {
-    	return '<span style="display: inline-block;  width: 0px;">'+cstr+'</span>\n';
-    }
-}
-function colorize(text) {
-    var returnHTML = '<div class="color-block">';
-    for(var i = 0; i < text.length; i++ ) {
-	returnHTML = returnHTML + colorize_one(text[i]);
-    }
-    returnHTML += '</div>';
-    return returnHTML;
-}
-
-function render() {
-    var text = $("#textarea").val();
-    var htext = text.replace(/(?:\r\n|\r|\n)/g, '<br />');
-    $("#fontrender").html(htext);
-
-    var ctext = colorize(text);
-    $("#cfontrender").html(ctext);
-}
-var ozymandias = "I met a traveller from an antique land\n\
-Who said: Two vast and trunkless legs of stone\n\
-Stand in the desert. Near them, on the sand,\n\
-Half sunk, a shattered visage lies, whose frown,\n\
-And wrinkled lip, and sneer of cold command,\n\
-Tell that its sculptor well those passions read\n\
-Which yet survive, stamped on these lifeless things,\n\
-The hand that mocked them and the heart that fed:\n\
-\n\
-And on the pedestal these words appear:\n\
-'My name is Ozymandias, king of kings:\n\
-Look on my works, ye Mighty, and despair!'\n\
-Nothing beside remains. Round the decay\n\
-Of that colossal wreck, boundless and bare\n\
-The lone and level sands stretch far away.\n\n\
--- Percy Bysshe Shelley";
-
+<script>
+      
 $("#textarea").val(ozymandias);
 render();
 
 var alphabet = "AaBbCcDdEeFfHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 $("#alphabet-text").html(alphabet);
 $("#alphabet").html(colorize(alphabet));
-		       </script>
-    <style>
-/*
-.inner {
-width: 1500px;
-}
-#content-wrapper {
-width: 90%;
-}
-#main-content {
-width: 90%;
-}
-
-
-/*
-.container {
- max-width: 2000px;
-}
-
-   */   
-      </style>
-      <!--- My color palette will be : Red Green Yellow Cyan Black
-a: r r
-b: g y
-c: m g
-d: r m
-e: g g
-f: r g
-g: g m
-h: c y
-i: y y
-j: y m
-k: y c
-l: c r
-m: g r
-n: r y
-o: c c
-p: c g
-q: m c
-r: r m
-s: g c
-t: m y
-u: m m
-v: r c
-w: y r
-x: y g
-y: c m
-z: m r
---->
+</script>
 
   
 
