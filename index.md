@@ -42,10 +42,6 @@ text-align: left;
 	      <td><div id="cfontrender" class="color-block"> </div></td>
 	    </tr>
 	  </table>
-</body>
-
-
-
 
 <h3>
   <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
@@ -57,10 +53,6 @@ text-align: left;
 <p> This is a newly created work, please send comments, ideas, or suggestions to Rob or open an issue.</p>
 
 <p>Check out our parent project, <a href="https://pubinv.github.io/PubInv">Public Invention</a>.</p>
-
-</section>
-</div>
-</div>
 
     <script>
 function isLetter(str) {
