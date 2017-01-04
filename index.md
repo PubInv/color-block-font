@@ -33,7 +33,7 @@ text-align: left;
 	</p>
 	<textarea rows="10" cols="80" id="textarea"></textarea>
 	
-	<input type="button" onclick="render()" value="Render!"></input>
+	<input type="button" onclick="render()" value="Render!">
 
 	<p>
 	  <table>
