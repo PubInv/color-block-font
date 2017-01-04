@@ -5,37 +5,9 @@ title: Color Block Font
     
     
 <style>
-    <!--- My color palette will be : Red Green Yellow Cyan Black
-a: r r
-b: g y
-c: m g
-d: r m
-e: g g
-f: r g
-g: g m
-h: c y
-i: y y
-j: y m
-k: y c
-l: c r
-m: g r
-n: r y
-o: c c
-p: c g
-q: m c
-r: r m
-s: g c
-t: m y
-u: m m
-v: r c
-w: y r
-x: y g
-y: c m
-z: m r
---->
-
   
-    .ax {
+  
+.ax {
 	position: relative;
     }
 span.ax::before {
@@ -1292,15 +1264,17 @@ span.Zx::after {
 }
 
 
-p,span,div {
+.text-block {
     font-family: "Courier";
-    font-size: 22px;
+font-size: 22px;
+text-align: left;
 }
 
     .color-block {
 	line-height: 28px;
 	font-family: "Courier";
-	font-size: 20px;
+font-size: 20px;
+text-align: left;
     }
 </style>
      
@@ -1310,7 +1284,7 @@ p,span,div {
 	<section id="textsection" style="{border: red;}">
 	</section>
 
-	<h1> Color Block Font </h1>    
+	<h1> Experimenting with a Colored Writing System </h1>    
 
 	<p>
 	  <div id="alphabet-text"> </div>
@@ -1328,8 +1302,8 @@ p,span,div {
 	<p>
 	  <table>
 	    <tr>
-	      <td><div id="fontrender"> </div></td>
-	      <td><div id="cfontrender"> </div></td>
+	      <td><section id="fontrender" class="text-block"> </section></td>
+	      <td><div id="cfontrender" class="color-block"> </div></td>
 	    </tr>
 	  </table>
 </body>
@@ -1340,7 +1314,7 @@ p,span,div {
 <h3>
   <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<p><a href="https://github.com/PubInv/chaos-pendulum">Chaos Pendulum</a> is written and maintained by
+<p><a href="https://github.com/PubInv/color-block-font">Color Block Font</a> is written and maintained by
 
   <a href="mailto:read.robert@gmail.com">Robert L. Read</a> at <a href="https://github.com/PubInv">PubInv</a>.</p>
 
@@ -1411,6 +1385,55 @@ render();
 var alphabet = "AaBbCcDdEeFfHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 $("#alphabet-text").html(alphabet);
 $("#alphabet").html(colorize(alphabet));
-</script>
+		       </script>
+    <style>
+/*
+.inner {
+width: 1500px;
+}
+#content-wrapper {
+width: 90%;
+}
+#main-content {
+width: 90%;
+}
+
+
+/*
+.container {
+ max-width: 2000px;
+}
+
+   */   
+      </style>
+      <!--- My color palette will be : Red Green Yellow Cyan Black
+a: r r
+b: g y
+c: m g
+d: r m
+e: g g
+f: r g
+g: g m
+h: c y
+i: y y
+j: y m
+k: y c
+l: c r
+m: g r
+n: r y
+o: c c
+p: c g
+q: m c
+r: r m
+s: g c
+t: m y
+u: m m
+v: r c
+w: y r
+x: y g
+y: c m
+z: m r
+--->
+
   
 
