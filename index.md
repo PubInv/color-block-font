@@ -1,3 +1,9 @@
+
+---
+layout: default
+title: Color Block Font
+---
+
 <!-- Copyright Robert L. Read, 2017
 
 // This file is part of color-block-font.
@@ -16,11 +22,6 @@
 //     along with color-block-font.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
-
----
-layout: default
-title: Color Block Font
----
     
 
 <link rel="stylesheet" href="./stylesheets/color-block.css">
