@@ -1,4 +1,22 @@
+/* Copyright Robert L. Read, 2017
+
+     This file is part of color-block-font.
+
+     Foobar is free software: you can redistribute it and/or modify
+     it under the terms of the GNU General Public License as published by
+     the Free Software Foundation, either version 3 of the License, or
+     (at your option) any later version.
+
+     Foobar is distributed in the hope that it will be useful,
+     but WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License
+     along with color-block-font.  If not, see <http://www.gnu.org/licenses/>.
  
+*/
+
 .ax {
 	position: relative;
     }
@@ -1260,3 +1278,31 @@ span.Zx::after {
     font-size: 16px;
     text-align: left;
 }
+/* My color palette will be : Red Green Yellow Cyan Black
+a: r r
+b: g y
+c: m g
+d: r m
+e: g g
+f: r g
+g: g m
+h: c y
+i: y y
+j: y m
+k: y c
+l: c r
+m: g r
+n: r y
+o: c c
+p: c g
+q: m c
+r: r m
+s: g c
+t: m y
+u: m m
+v: r c
+w: y r
+x: y g
+y: c m
+z: m r
+*/
